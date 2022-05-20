@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Video Live Stream</title>
+  </head>
+  <body>
+    <h1>Video Live Stream</h1>
+    <!-- <img src="{% url 'recognition:video_feed' %}"> -->
+    <!-- <img src="{% url 'recognition:webcam_feed' %}"> -->
+    <!-- <img src="{% url 'recognition:mask_feed' %}"> -->
+    <img src="{% url 'recognition:recognition_video_feed' %}"/>
+    <!-- <img src="{% url 'recognition:livecam_feed' %}"> -->
+    <div class="container">
+      <a href="{% url 'recognition:add_face_data' %}"/>顔のデータを取り込む</a>
+      <a href="{% url 'recognition:train_face_data' %}">顔を学習させる</a>
+    </div>
+  </body>
+</html>
